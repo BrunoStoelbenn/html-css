@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible Box</title>
+    <style>
+      /*ANOTAÇÕES IMPORTANTES
+        a propriedade flex-flow serve para indicar duas coisas, a primeira é se a div pai irá armazenar as divs filhas na mesma linha, no caso row, ou na mesma coluna, no caso column, e a segunda é se as linhas irão ser quebradas, no caso nowrap é que não irão ser quebradas e wrap é que irão ser quebradas.
+      */
+      div.conteiner {
+        background-color: lightsalmon;
+        display: flex;
+        flex-flow: row nowrap;
+        margin: auto 100px;
+      }
+
+      div.item {
+        background-color: lightblue;
+        border: 1px solid black;
+        text-align: center;
+        flex: auto;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conteiner">
+      <div class="item">Exemplo de Bloco A</div>
+      <div class="item">Exemplo de Bloco B</div>
+      <div class="item">Exemplo de Bloco C</div>
+      <div class="item">Exemplo de Bloco D</div>
+      <div class="item">Exemplo de Bloco E</div>
+      <div class="item">Exemplo de Bloco F</div>
+      <div class="item">Exemplo de Bloco G</div>
+    </div>
+  </body>
+</html>

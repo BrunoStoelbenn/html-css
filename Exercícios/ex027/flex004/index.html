@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible Box</title>
+    <style>
+      div.container {
+        background-color: lightsalmon;
+        display: flex;
+      }
+
+      div#container {
+        background-color: lightsalmon;
+        flex-flow: row wrap;
+        height: 400px;
+        align-items: center;
+        justify-content: center;
+      }
+      /*ANOTAÇÕES IMPORTANTES
+        O JUSTIFY-CONTENT alinha os items sempre no meu eixo main-axxis, ou seja, no eixo horizontal
+        O ALIGN-ITEMS alinha os itens sempre no meu eixo cross-axxis, ou seja, no eixo vertical
+      */
+
+      div.item {
+        background-color: lightblue;
+        border: 1px solid black;
+        text-align: center;
+        padding: 10px;
+      }
+
+      div#container2 {
+        margin: 100px 0px;
+        background-color: lightsalmon;
+        justify-content: space-evenly;
+      }
+
+      div#container3 {
+        margin: 100px 0px;
+        background-color: lightsalmon;
+        justify-content: flex-start;
+      }
+
+      div#container4 {
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        margin: 100px 0px;
+        background-color: lightsalmon;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="item">Exemplo de Bloco A</div>
+      <div class="item">Exemplo de Bloco B</div>
+      <div class="item">Exemplo de Bloco C</div>
+      <div class="item">Exemplo de Bloco D</div>
+      <div class="item">Exemplo de Bloco E</div>
+      <div class="item">Exemplo de Bloco F</div>
+      <div class="item">Exemplo de Bloco G</div>
+    </div>
+    <div class="container" id="container2">
+      <div class="item">Exemplo de Bloco A</div>
+      <div class="item">Exemplo de Bloco B</div>
+      <div class="item">Exemplo de Bloco C</div>
+      <div class="item">Exemplo de Bloco D</div>
+      <div class="item">Exemplo de Bloco E</div>
+      <div class="item">Exemplo de Bloco F</div>
+      <div class="item">Exemplo de Bloco G</div>
+    </div>
+    <div class="container" id="container3">
+      <div class="item">Exemplo de Bloco A</div>
+      <div class="item">Exemplo de Bloco B</div>
+      <div class="item">Exemplo de Bloco C</div>
+      <div class="item">Exemplo de Bloco D</div>
+      <div class="item">Exemplo de Bloco E</div>
+      <div class="item">Exemplo de Bloco F</div>
+      <div class="item">Exemplo de Bloco G</div>
+    </div>
+    <div class="container" id="container4">
+      <div class="item">Exemplo de Bloco A</div>
+      <div class="item">Exemplo de Bloco B</div>
+      <div class="item">Exemplo de Bloco C</div>
+      <div class="item">Exemplo de Bloco D</div>
+      <div class="item">Exemplo de Bloco E</div>
+      <div class="item">Exemplo de Bloco F</div>
+      <div class="item">Exemplo de Bloco G</div>
+    </div>
+  </body>
+</html>
