@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com Select, Datalist e textarea em HTML5</title>
+</head>
+<body>
+    <h1>Formulário com Select, Datalist e textarea em HTML5</h1>
+    <form action="cadastro.php" autocomplete="on" method="GET">
+        <p>
+            <label for="iest">Estado: </label>
+            <select name="est" id="iest">
+                <option value="" selected>----Selecione----</option>
+                <optgroup label="Região Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            Sexo:
+            <input type="radio" name="Sexo" id="isexmasc"><label for="isexmasc">Masculino</label>
+            <input type="radio" name="Sexo" id="isexfem"><label for="isexfem">Feminino</label>
+        </p>
+
+        <p>
+            <label for="ilistaprof">Profissão: </label>
+            <input type="text" name="lista" id="ilistaprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="MED">Médico</option>
+                <option value="COZ">Cozinheiro</option>
+                <option value="ADV">Advogado</option>
+                <option value="POL">Policial</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROG">Programador</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite a sua mensagem aqui! "></textarea></label>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com output</title>
+</head>
+<body>
+    <h1>Formulário com Programação output</h1>
+    <form action="cadastro.php" autocomplete="on" method="get">
+        <p>
+            <label for="in1">Número 1: </label>
+            <input type="number" name="numero1" id="in1" required min="0" max="50" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value) + Number(in3.value) + Number(in4.value)">
+        </p>
+        <p>
+            <label for="in2">Número 2: </label>
+            <input type="number" name="numero2" id="in2" required min="0" max="50" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value) + Number(in3.value) + Number(in4.value)">
+        </p>
+        <p>
+            <label for="in3">Número 3: </label>
+            <input type="number" name="numero3" id="in3" required min="0" max="50" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value) + Number(in3.value) + Number(in4.value)">
+        </p>
+        <p>
+            <label for="in4">Número 4: </label>
+            <input type="number" name="numero4" id="in4" required min="0" max="50" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value) + Number(in3.value) + Number(in4.value)">
+        </p>
+        <p>
+            <label for="isoma">Soma: </label>
+            <output id="isoma">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
