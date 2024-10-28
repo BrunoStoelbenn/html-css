@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible Box</title>
+    <style>
+      /*ANOTAÇÕES IMPORTANTES
+        Centralização Absoluta com Flexbox
+        Centralização, tanto no eixo vertical quanto horizontal.
+        Basta usar align-items: center;, para alinhar na vertical, eixo cross-axxis e justify-content: center;, para alinhar na horizontal, eixo main-axxis.
+      */
+
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      div#container {
+        display: flex;
+        background-color: lightsalmon;
+        flex-flow: row nowrap;
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+      }
+
+      div.item {
+        background-color: lightblue;
+        border: 1px solid black;
+        padding: 10px;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="item"></div>
+    </div>
+  </body>
+</html>
