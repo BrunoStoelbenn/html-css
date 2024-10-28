@@ -6,11 +6,12 @@
     <title>Flexible Box</title>
     <style>
       /*ANOTAÇÕES IMPORTANTES
-        a minha div DIV.CONTEINER será a div pai, ou seja, a div que contém as outras div's dentro. A div pai sempre deve receber a propriedade display: flex; no FlexBox e as propriedades justify-content, align-items serão aplicadas nela.
+        A propriedade flex-basis irá fazer com que as divs filhas, ou seja, as divs da classe "item", fiquem com a largura padrão de 150px o máximo que elas conseguirem.
       */
       div.conteiner {
         background-color: lightsalmon;
         display: flex;
+        justify-content: center;
         flex-flow: row nowrap;
       }
 
