@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible Box</title>
+    <style>
+      /*ANOTAÇÕES IMPORTANTES
+        a minha div DIV.CONTEINER será a div pai, ou seja, a div que contém as outras div's dentro. A div pai sempre deve receber a propriedade display: flex; no FlexBox e as propriedades justify-content, align-items serão aplicadas nela.
+      */
+      div.conteiner {
+        background-color: lightsalmon;
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 20px auto;
+      }
+
+      div.item {
+        background-color: lightblue;
+        border: 1px solid black;
+        text-align: center;
+        height: 50px;
+      }
+
+      div#item1 {
+        /* flex-basis: 250px;
+        flex-shrink: 1;
+        flex-grow: 0; */
+
+        flex: 0 1 250; /* flex é a forma abreviada de flex-grow + flex-shrink + flex-basis */
+      }
+
+      div#item2 {
+        /* flex-basis: 250px;
+        flex-shrink: 0;
+        flex-grow: 2; */
+
+        flex: 2 0 250;
+      }
+
+      div#item3 {
+        /* flex-basis: 250px;
+        flex-shrink: 2;
+        flex-grow: 1; */
+
+        flex: 1 2 250;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conteiner">
+      <div class="item" id="item1">A</div>
+      <div class="item" id="item2">B</div>
+      <div class="item" id="item3">C</div>
+    </div>
+  </body>
+</html>
